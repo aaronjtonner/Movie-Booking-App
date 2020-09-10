@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="main.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Movie Selection -->
+		<section>
+			<div class="movie-form">
+				<label for="movie-selection">Select a movie:</label>
+				<select name="movies" id="movie-selection">
+					<option value="12">Joker ($12)</option>
+					<option value="9">x-men ($9)</option>
+					<option value="8">Disturbed ($8)</option>
+					<option value="5">The Shining($5)</option>
+				</select>
+			</div>
+		</section>
+
+		<!-- Seat type showcase -->
+		<section>
+			<ul class="showcase">
+				<li>
+					<div class="seat"></div>
+					<small>Available</small>
+				</li>
+				<li>
+					<div class="seat seat-selected"></div>
+					<small>Selected</small>
+				</li>
+				<li>
+					<div class="seat seat-occupied"></div>
+					<small>Occupied</small>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Movie screen -->
+		<section class="screen-container">
+			<div class="movie-screen">
+				<video autoplay muted loop id="myVideo">
+					<source src="./images/clock.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</section>
+
+		<!-- Theatre -->
+		<section id="seat-container">
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+			</div>
+
+			<div class="row">
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat"></div>
+				<div class="seat seat-occupied"></div>
+				<div class="seat seat-occupied"></div>
+			</div>
+		</section>
+
+		<section>
+			<div class="summary">
+				<h3>Seats selected: <span id="total-seats">0</span></h3>
+				<h3>Total price: $<span id="total-price">0</span></h3>
+			</div>
+		</section>
+
+		<script src="app.js"></script>
+	</body>
+</html>
